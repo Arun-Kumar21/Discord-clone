@@ -6,7 +6,6 @@ import React from 'react'
 import { ActionTooltip } from '../action-tooltip';
 import { Plus, Settings } from 'lucide-react';
 import { useModal } from '@/hooks/use-modal-store';
-import { Button } from '../ui/button';
 
 interface ServerSectionProps{
   label : string ;
