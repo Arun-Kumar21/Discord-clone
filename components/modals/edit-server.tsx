@@ -61,7 +61,6 @@ export const EditServerMddal = () => {
     }
   },[server , form]);
 
-
   const isLoading = form.formState.isSubmitting;
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {

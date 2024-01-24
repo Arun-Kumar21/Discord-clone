@@ -52,7 +52,7 @@ export const InviteModal = () => {
   };
 
   const inviteUrl = `${origin}/invite/${server?.inviteCode}`;
-
+  
   return (
     <Dialog open={isModalOpen} onOpenChange={onClose}>
       <DialogContent className="bg-white text-black p-0 overflow-hidden">

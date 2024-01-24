@@ -6,6 +6,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { useEffect, useState } from "react";
 
 interface ActionToolProps {
     label : string;
@@ -20,7 +21,14 @@ export const ActionTooltip = (
     side,
     align} : ActionToolProps
 ) => {
+    const [isClient , setIsClient] = useState(false);
+
+    useEffect(()=>{
+        setIsClient(true);
+    },[])
+
     return(
+        isClient &&
         <TooltipProvider>
             <Tooltip delayDuration={50}>
                 <TooltipTrigger>
